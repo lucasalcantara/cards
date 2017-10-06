@@ -1,0 +1,33 @@
+<html>
+<head>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+		<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"> </script>
+
+		<link rel="stylesheet" type="text/css" href="css/cards.css">
+</head>
+	<body>
+
+		{{template "header"}}
+
+		<div id="grid-containter">
+			{{range .}}
+				<div class="card-grid">
+					<div class="front">
+						<p>{{.Answer}}</p>
+						<input type="text" style="width: 100%;"/>
+					</div>
+
+					<div class="back">
+						<p class="phrase">{{.Question}}</p>
+						<p class="compare"></p>
+						<button class="speech">Listen</button>
+					</div>
+				</div>
+			{{end}}
+		</div>
+
+		 <audio src="" class="speech" hidden></audio>
+
+		 <script src="js/cards.js"> </script>
+	</body>
+</html>

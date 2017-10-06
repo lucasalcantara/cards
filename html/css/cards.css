@@ -1,0 +1,32 @@
+.card-grid {
+	width: auto;
+    min-width: 80px;
+	height: 80px;
+    float: left;
+    margin-right: 35px;
+}
+
+.front {
+    background: #d2d2d2;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+.back {
+    background: #d2d2d2;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+}
+
+#grid-containter{
+}
